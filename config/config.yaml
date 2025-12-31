@@ -1,0 +1,17 @@
+dataset:
+  name: dropout_default
+  path: data/raw/student_dropout.csv
+
+  id_column: student_id
+  target_column: dropout
+
+  numeric_columns: []
+  categorical_columns: []
+  text_columns: []
+  datetime_columns: []
+  ignore_columns: []
+
+  target_positive_values: [1, "1", "yes", "Yes", "Y", "true", "True", "dropout", "Dropout"]
+  target_negative_values: [0, "0", "no", "No", "N", "false", "False", "stay", "Stay"]
+
+  missing_threshold: 0.6
